@@ -29,4 +29,7 @@ html {
 
 .titulo-inicial {
   text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 100%;
 }
