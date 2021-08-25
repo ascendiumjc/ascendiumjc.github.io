@@ -6,7 +6,7 @@ A estrutura é dividida por quatro páginas diferentes:
 - Portfólio
 - Contactos
 
-Para a elaboração deste website foi usada a framework do w3school.css, e baseado no template Startup.
+Para a elaboração deste website foi usada a framework W3.CSS (do W3Schools), e baseado no template Startup.
 
 Por uma questão de organização, todas as imagens devem estar dentro da pasta "Img" e todos os documentos dentro da pasta "Docs"
 
