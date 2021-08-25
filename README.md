@@ -13,3 +13,8 @@ Por uma questão de organização, todas as imagens devem estar dentro da pasta 
 To do:
 - Adicionar Keywords de pesquisa à Página Inicial
 - Adicionar Descrição à Página Inicial
+
+Links úteis:
+Template Original:   https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_startup
+Referência W3.CSS:   https://www.w3schools.com/w3css/w3css_references.asp
+Snippets Engraçados: https://www.w3schools.com/howto/default.asp
