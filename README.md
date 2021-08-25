@@ -8,7 +8,7 @@ A estrutura é dividida por quatro páginas diferentes:
 
 Para a elaboração deste website foi usada a framework do w3school.css, e baseado no template Startup.
 
-Por uma questão de organização, todas as imagens devem estar dentro da pasta "Img" e todos os documento dentro da pasta "Docs"
+Por uma questão de organização, todas as imagens devem estar dentro da pasta "Img" e todos os documentos dentro da pasta "Docs"
 
 To do:
 - Adicionar Keywords de pesquisa à Página Inicial
