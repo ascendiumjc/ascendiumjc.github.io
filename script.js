@@ -21,5 +21,23 @@ function w3_open() {
 
 // Close the sidebar with the close button
 function w3_close() {
-    mySidebar.style.display = "none";
+  mySidebar.style.display = "none";
+}
+
+/**
+ * Start of Missão, Visão e Valores
+ */
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
 }
