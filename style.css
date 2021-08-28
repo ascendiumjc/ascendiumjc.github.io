@@ -80,3 +80,24 @@ button.accordion.active:after {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
+/*
+
+  ESTILOS DA PÁGINA DE CONTACTOS
+
+*/
+
+.map{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map iframe{
+  left:20%;
+  top:0;
+  height:80%;
+  width:75%;
+  position:absolute;
+}
