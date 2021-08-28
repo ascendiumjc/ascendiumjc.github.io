@@ -74,6 +74,7 @@ button.accordion.active:after {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
+  text-align: justify;
   padding: 0 18px;
   background-color: white;
   max-height: 0;
