@@ -83,6 +83,63 @@ button.accordion.active:after {
 
 /*
 
+  ESTILOS DA PÁGINA DA EQUIPA
+
+*/
+
+.bgimg-Equipa-Top {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Img/img-waves-down.png");
+  min-height: 5%;
+  height: 42%;
+}
+
+.bgimg-Equipa-Side {
+  background-image: url("Img/img-waves-left-right.png"), url("Img/img-waves-right-left.png");
+  background-repeat: repeat-y;
+  background-size: 10%, 10%;
+  background-position: 0%, 100%;
+}
+
+.Card-Team-Grid-Title{
+  margin-inline: 25%;
+}
+
+.Card-Team-Grid{
+  margin:1% 20%; 
+  border-radius: 20px;
+}
+
+.Card-Team {
+  padding: 0px !important;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 1.5%;
+  width:30%;
+}   
+
+.Card-Team img {
+  width:100%;
+  border-radius: 20px 20px 0px 0px;
+}    
+
+.Card-Team-Title {
+  font-size: 15px;
+  margin: -15px;
+  padding: 0px;
+}
+
+.Card-Team-Anchor {
+  font-size: 22px;
+  padding: 2.5%;
+}
+.CardAnchor:hover {
+  opacity: 0.8;
+}
+
+/*
+
   ESTILOS DA PÁGINA DE CONTACTOS
 
 */
