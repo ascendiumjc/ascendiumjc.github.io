@@ -87,6 +87,14 @@ button.accordion.active:after {
 
 */
 
+.bgimg-contacts {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Img/img-waves-down.png");
+  min-height: 5%;
+  height: 42%;
+}
+
 .map{
   overflow:hidden;
   padding-bottom:56.25%;
