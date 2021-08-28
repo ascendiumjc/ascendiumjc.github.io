@@ -53,11 +53,23 @@ html {
   transition: 0.4s;
 }
 
+button.accordion::after {
+  font-size: 20px;
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+button.accordion.active:after {
+  content: "\2212";
+}
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-  background-color: #ccc;
+  background-color: white;
 }
 
 /* Style the accordion panel. Note: hidden by default */
