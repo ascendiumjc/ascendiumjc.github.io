@@ -23,6 +23,13 @@ html {
   min-height: 100%;
 }
 
+.bgimg-2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Img/img-waves-up-down.png");
+  min-height: 100%;
+}
+
 .w3-bar .w3-button {
   padding: 16px;
 }
