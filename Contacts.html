@@ -2,8 +2,8 @@
 <html lang="pt">
 
 <head>
-<title>Ascendium Junior Consulting</title>
-<link rel="icon" href="./Img/AscendiumIcon.jpg" type="image/icon">
+<title>Ascendium JC | Contactos</title>
+<link rel="icon" href="./Img/ascendium-icon.png" type="image/icon">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -33,7 +33,81 @@
 
 <body>
 
-Hello World
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-green w3-card" id="myNavbar">
+      <a href="Main.html" class="w3-bar-item w3-button w3-wide">ASCENDIUM JC</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="Team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> EQUIPA</a>
+        <a href="Portfolio.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PORTFOLIO</a>
+        <a href="Contacts.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTOS</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
 
+  <!-- Sidebar em Dispositivos com Ecrâ Pequeno -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Fechar ×</a>
+    <a href="Team.html" onclick="w3_close()" class="w3-bar-item w3-button">EQUIPA</a>
+    <a href="href=Portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+    <a href="Contacts.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTOS</a>
+  </nav>
+
+  <!-- Header com a Imagem Inteira -->
+  <header class="bgimg-1 w3-center" id="#home">
+    <div class="w3-center w3-text-white" style="width: 100%; padding-top: 5%;">
+      <br><br><br><br>
+      <span class="Ascendium">CONTACTO</span><br><br>
+      <span class="w3-large">Alguma dúvida ou questão? Não hesite em nos contactar!</span>
+    </div>
+    <div class="w3-text-white w3-xlarge" style="padding: 1%;">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+  </header>
+
+    <!-- Google Maps e Contactos -->  
+    <div class="w3-row" style="margin-top: 1%;">
+
+      <!-- Google Maps -->
+      <div class="w3-half w3-container" style="margin-top: 0.5%;">
+          <div class = "map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1501.4938293775865!2d-8.608382251465578!3d41.178436378513595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd246449b419e1c1%3A0x16a6fd2fcace4efe!2sInstituto%20Superior%20de%20Engenharia%20do%20Porto%20-%20Polit%C3%A9cnico%20do%20Porto!5e0!3m2!1spt-PT!2spt!4v1629991093617!5m2!1spt-PT!2spt"
+          width="520" height="410" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+          </div> 
+      </div>
+
+      <!-- Secção de Contactos -->
+      <div class="w3-half w3-container">
+        <div class="w3-content w3-text-black" id="contact">
+          <!-- Titulo dos Contactos -->
+          <h2 class="w3-text-black"><b>Ascendium JC</b></h2>
+          <hr style="width:50%; border-color:green; border-width: 2%;">
+          <!-- Descrição dos Contactos -->
+          <div class="w3-section w3-xlarge">
+            <!-- Contacto Morada -->
+            <a href="https://goo.gl/maps/iFwafr7TkV5ji5r78" target="_blank" class="email" style="text-decoration: none;">
+            <p><i class="fa fa-map-marker fa-fw w3-text-red w3-xxlarge w3-margin-right"></i> <b>Porto, PT</b></p></a>
+            <!-- Contacto Telefónico -->
+            <a href="tel:+351 919111222" target="_blank" class="email" style="text-decoration: none;">
+            <p><i class="fa fa-phone fa-fw w3-text-green w3-xxlarge w3-margin-right"></i><b>+351 919111222</b></p></a>
+            <!-- Contacto Email -->
+            <a href="mailto:ascendium.geral@ascendium.pt?subject=Contacto-Ascendium" target="_blank" class="email" style="text-decoration: none;">
+            <p><i class="fa fa-envelope fa-fw w3-text-yellow w3-xxlarge w3-margin-right"> </i><b>ascendium.geral@ascendium.pt</b></p></a>
+          </div><br>
+        <!-- Fim da Secção de Contactos -->
+        </div>
+      </div>
+
+    </div>
+        
 </body>
 </html>
