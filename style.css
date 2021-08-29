@@ -48,6 +48,14 @@ html {
   font-weight: 800;
   text-shadow: 2px 2px 2px lightgray;
 }
+
+.Equipa {
+  text-align: center;
+  font-size: 55px;
+  font-weight: 1000;
+  line-height: 0%;
+  text-shadow: 2px 2px 2px lightgray;
+}
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   color: black;
@@ -100,7 +108,7 @@ button.accordion.active:after {
   background-size: cover;
   background-image: url("Img/img-waves-down.png");
   min-height: 5%;
-  height: 42%;
+  height: 50%;
 }
 
 .bgimg-Equipa-Side {
