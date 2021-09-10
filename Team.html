@@ -32,6 +32,15 @@
   <!-- Código Fonte de JavaScript -->
   <script src="script.js" crossorigin="anonymous"></script>
 
+  <!--Fontes do instagram slider -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <script type="text/javascript" src="js/instafeed.min.js"></script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
 </head>
 
 <!-- <div class="bgimg-Equipa-Side"> -->
@@ -470,6 +479,46 @@
     </div>
   </div>
 </div>
+
+ <!-- Insta Slider -->
+<div id="instafeed" class="owl-carousel owl-theme owl-loaded owl-drag w3-padding-16 "></div>
+
+  <script type="text/javascript">
+    var feed = new Instafeed({
+      accessToken: 'IGQVJVek5kcUVFank3bEl4VUhWNHBlMUtTejRpSS15WkRCamljaU9JSlJ1bmFtakRzcU83T0oxb3FmR1BQaHkzeGcyOF9HZAklhaTlsRU13eEg5OElkTi1iTnRxUDRSZA3JIRGs4UFk0LUJzN1NfX2RjWAZDZD',
+      limit: 20,
+      template:'<div class="item"><a href="{{link}}" target="_blank"><img title="{{caption}}" src="{{image}}" /></a></div>',
+
+      after: function(){
+
+        $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:false,
+          responsiveClass:true,
+          responsive:{
+            0:{
+              items:1
+              
+            },
+            600:{
+              items:3
+              
+            },
+            1000:{
+              items:5,              
+              loop:false
+            }
+          }
+        });
+      }
+    });
+
+
+    feed.run();
+
+  </script>
+
 
 </body>
 
