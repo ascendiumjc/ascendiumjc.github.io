@@ -47,8 +47,9 @@
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-black w3-card" id="myNavbar">
-    <a href="Main.html" class="w3-bar-item w3-button w3-wide">ASCENDIUM JC</a>
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="Main.html" class="w3-bar-item w3-button w3-wide" style="float: left;">ASCENDIUM JC <img src='Img/ascendium-icon2.ico' style="display:inline; float:right; width:11%; vertical-align: middle; margin-left:-180px; border:0px;"/>
+    </a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="Team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> EQUIPA</a>
@@ -63,18 +64,31 @@
 </div>
 
 <!-- Sidebar em Dispositivos com Ecrâ Pequeno -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none"
-  id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Fechar ×</a>
-  <a href="Team.html" onclick="w3_close()" class="w3-bar-item w3-button">EQUIPA</a>
-  <a href="Contacts.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTOS</a>
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; margin-top: 15%;"
+  id="myNavbar2">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-black w3-large">Fechar Aba<i class="fas fa-times-circle" style="float: right;"></i></a>
+  <a href="#shortcutDirecao" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fas fa-user-friends"></i> Direção</a>
+  <a href="#shortcutAssembleia" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green" style="text-align: justify;"><i class="fas fa-user-friends"></i> Mesa de<br> Assembleia Geral</a>
+  <a href="#shortcutFiscal" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fas fa-user-friends"></i> Conselho Fiscal</a>
+  <a href="#shortcutProjetos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fas fa-store-alt"></i> Departamento<br> de Projetos</a>
+  <a href="#shortcutMarketing" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fas fa-user-friends"></i> Departamento de Marketing e Comunicação</a>
+  <a href="#shortcutComercial" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fas fa-store-alt"></i> Departamento Comercial</a>
+  <a href="#shortcutQualidade" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fas fa-store-alt"></i> Departamento de Gestão e Qualidade</a>
+  <a href="#shortcutDireito" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fas fa-store-alt"></i> Departamento de Direito e Finanças</a>
+  <a href="#shortcutRH" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fas fa-store-alt"></i> Departamento de Recursos Humanos</a>
+  <hr>
+  <a href="Main.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fas fa-home"></i> PÁGINA INICIAL</a>
+  <a href="Contacts.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fa fa-envelope"></i> CONTACTOS</a>
 </nav>
+
+<!-- Código Fonte de JavaScript -->
+<script src="script.js" crossorigin="anonymous"></script>
 
 <!-- Header with full-height image -->
 <header class="bgimg-1" id="#home">
   <div class="w3-display-middle w3-text-white" style="width: 100%; padding-bottom: 5%;">
     <br><br><br><br>
-    <span class="Ascendium">EQUIPA</span><br><br>
+    <span class="w3-xxxlarge" style="text-align: center; font-weight: 1000; line-height: 0%; text-shadow: 2px 2px 2px lightgray;">EQUIPA</span><br><br>
     <span class="w3-large">Conhece a equipa que todos os dias faz a Ascendium crescer.</span>
     <div class="w3-text-white w3-xlarge" style="padding: 1%;">
       <a href="https://www.facebook.com/ascendiumjc" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
@@ -89,15 +103,15 @@
 
 <!-- DIREÇÃO-->
 <div>
-  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title">
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutDirecao">
     <br>
-    <h1><i class="fas fa-user-friends"></i> Direção</h1>
+    <h1  class="TitleTeam"><i class="fas fa-user-friends"></i> Direção</h1>
   </div>
   <div class="w3-container w3-center Card-Team-Grid">
     <!-- Primeira Linha-->
     <div class="w3-row-padding w3-centered">
       <!-- Presidente -->
-      <div class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white">
+      <div class="Card-Team w3-third w3-center w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white">
         <img src="Img/MargaridaMelo.png" alt="Margarida Melo">
         <h3>Margarida Melo</h3>
         <p class="Card-Team-Title"><b>Presidente</b></p>
@@ -128,8 +142,7 @@
     <div class=" w3-container w3-center w3-centered">
       <!-- Tesoureiro -->
       <div
-        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered"
-        style="margin-left: 18%">
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered LinhaDois">
         <img src="Img/AngeloSoares.png" alt="Ângelo Soares">
         <h3>Ângelo Soares</h3>
         <p class="Card-Team-Title"><b>Tesoureiro</b></p>
@@ -153,9 +166,9 @@
 
 <!-- MESA DE ASSEMBLEIA GERAL-->
 <div>
-  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title">
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutAssembleia">
     <br>
-    <h1><i class="fas fa-user-friends"></i> Mesa de Assembleia Geral</h1>
+    <h1  class="TitleTeam"><i class="fas fa-user-friends"></i> Mesa de Assembleia Geral</h1>
   </div>
   <div class="w3-container w3-center Card-Team-Grid">
     <!-- Primeira Linha-->
@@ -191,9 +204,9 @@
 
 <!-- CONSELHO FISCAL-->
 <div>
-  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title">
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutFiscal">
     <br>
-    <h1><i class="fas fa-user-friends"></i> Conselho Fiscal</h1>
+    <h1  class="TitleTeam"><i class="fas fa-user-friends"></i> Conselho Fiscal</h1>
   </div>
   <div class="w3-container w3-center Card-Team-Grid">
     <!-- Primeira Linha-->
@@ -230,17 +243,16 @@
 
 <!-- DEPARTAMENTO DE PROJETOS-->
 <div>
-  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title">
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutProjetos">
     <br><br>
-    <h1><i class="fas fa-store-alt"></i> Departamento de Projetos</h1>
+    <h1  class="TitleTeam"><i class="fas fa-store-alt"></i> Departamento de Projetos</h1>
   </div>
   <div class="w3-container w3-center Card-Team-Grid">
     <!-- PRIMEIRA LINHA -->
-    <div class=" w3-container w3-center w3-centered">
+    <div class="w3-row-padding w3-center w3-centered">
       <!-- PRIMEIRA PESSOA -->
       <div
-        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered"
-        style="margin-left: 18%">
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered LinhaDois">
         <img src="Img/CarlosVieira.png" alt="Carlos Vieira">
         <h3>Carlos Vieira</h3>
         <p class="Card-Team-Title"><b>Gestor de Projeto</b></p>
@@ -260,9 +272,9 @@
       </div>
     </div>
     <!-- SEGUNDA LINHA-->
-    <div class="w3-row-padding w3-centered">
+    <div class="w3-row-padding w3-center w3-centered">
       <!-- Primeira Pessoa -->
-      <div class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white">
+      <div class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered">
         <img src="Img/DiogoTeixeira.png" alt="Diogo Teixeira">
         <h3>Diogo Teixeira</h3>
         <p class="Card-Team-Title"><b>Projetista</b></p>
@@ -290,11 +302,10 @@
       </div>
     </div>
     <!-- TERCEIRA LINHA-->
-    <div class=" w3-container w3-center w3-centered">
+    <div class="w3-row-padding w3-center w3-centered">
       <!-- PRIMEIRA PESSOA -->
       <div
-        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered"
-        style="margin-left: 18%">
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered LinhaDois">
         <img src="Img/MariaCarlão.png" alt="Maria Carlão">
         <h3>Maria Carlão</h3>
         <p class="Card-Team-Title"><b>Projetista</b></p>
@@ -318,9 +329,9 @@
 
 <!-- MARKETING E COMUNICAÇÃO-->
 <div>
-  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title">
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutMarketing">
     <br>
-    <h1><i class="fas fa-user-friends"></i> Departamento de Marketing e Comunicação</h1>
+    <h1  class="TitleTeam"><i class="fas fa-user-friends"></i> Departamento de Marketing e Comunicação</h1>
   </div>
   <div class="w3-container w3-center Card-Team-Grid">
     <!-- Primeira Linha-->
@@ -355,17 +366,16 @@
 
 <!-- DEPARTAMENTO COMERCIAL-->
 <div>
-  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title">
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutComercial">
     <br><br>
-    <h1><i class="fas fa-store-alt"></i> Departamento Comercial</h1>
+    <h1  class="TitleTeam"><i class="fas fa-store-alt"></i> Departamento Comercial</h1>
   </div>
   <div class="w3-container w3-center Card-Team-Grid">
     <!-- PRIMEIRA LINHA -->
-    <div class=" w3-container w3-center w3-centered">
+    <div class="w3-row-padding w3-center w3-centered">
       <!-- PRIMEIRA PESSOA -->
       <div
-        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered"
-        style="margin-left: 18%">
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered LinhaDois">
         <img src="Img/EduardaPais.png" alt="Eduarda Pais">
         <h3>Eduarda Pais</h3>
         <p class="Card-Team-Title"><b>-</b></p>
@@ -387,17 +397,16 @@
 
 <!-- GESTÃO DE QUALIDADE-->
 <div>
-  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title">
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutQualidade">
     <br><br>
-    <h1><i class="fas fa-store-alt"></i> Gestão de Qualidade</h1>
+    <h1  class="TitleTeam"><i class="fas fa-store-alt"></i> Gestão de Qualidade</h1>
   </div>
   <div class="w3-container w3-center Card-Team-Grid">
     <!-- PRIMEIRA LINHA -->
-    <div class=" w3-container w3-center w3-centered">
+    <div class="w3-row-padding w3-center w3-centered">
       <!-- PRIMEIRA PESSOA -->
       <div
-        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered"
-        style="margin-left: 18%">
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered LinhaDois">
         <img src="Img/JoanaMonteiro.png" alt="Joana Monteiro">
         <h3>Joana Monteiro</h3>
         <p class="Card-Team-Title"><b>Diretora</b></p>
@@ -419,17 +428,16 @@
 
 <!-- DIREITO E FINANÇAS -->
 <div>
-  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title">
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutDireito">
     <br><br>
-    <h1><i class="fas fa-store-alt"></i> DIREITO E FINANÇAS</h1>
+    <h1 class="TitleTeam"><i class="fas fa-store-alt"></i> DIREITO E FINANÇAS</h1>
   </div>
   <div class="w3-container w3-center Card-Team-Grid">
     <!-- PRIMEIRA LINHA -->
-    <div class=" w3-container w3-center w3-centered">
+    <div class="w3-row-padding w3-center w3-centered">
       <!-- SEGUNDA PESSOA -->
       <div
-        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered"
-        style="margin-left:18%">
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered LinhaDois">
         <img src="Img/ManuelBaptista.png" alt="Manuel Baptista">
         <h3>Manuel Baptista</h3>
         <p class="Card-Team-Title"><b>-</b></p>
@@ -451,17 +459,16 @@
 
 <!-- RECURSOS HUMANOS -->
 <div>
-  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title">
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutRH">
     <br><br>
-    <h1><i class="fas fa-store-alt"></i> Recursos Humanos</h1>
+    <h1 class="TitleTeam"><i class="fas fa-store-alt"></i> Recursos Humanos</h1>
   </div>
   <div class="w3-container w3-center Card-Team-Grid">
     <!-- PRIMEIRA LINHA -->
-    <div class=" w3-container w3-center w3-centered">
+    <div class="w3-row-padding w3-center w3-centered">
       <!-- SEGUNDA PESSOA -->
       <div
-        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered"
-        style="margin-left:18%">
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered LinhaDois">
         <img src="Img/FilipaSousa.png" alt="Filipa Sousa">
         <h3>Filipa Sousa</h3>
         <p class="Card-Team-Title"><b>Diretora</b></p>
