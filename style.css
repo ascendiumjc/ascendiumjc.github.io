@@ -20,7 +20,7 @@ html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("Img/img-waves-down.png");
+  background-image: url("Img/img-waves-down-2.png");
   min-height: 100%;
 }
 
@@ -37,7 +37,7 @@ html {
 
 .Ascendium {
   text-align: center;
-  font-size: 100px;
+  font-size: 650%;
   font-weight: 1000;
   line-height: 0%;
   text-shadow: 2px 2px 2px lightgray;
@@ -48,6 +48,15 @@ html {
   font-size: 55px;
   font-weight: 800;
   text-shadow: 2px 2px 2px lightgray;
+}
+
+#SocialMain {
+  padding-bottom: 10%;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  #SocialMain {padding-bottom: 35%;}
 }
 
 .Equipa {
@@ -155,16 +164,38 @@ button.accordion.active:after {
   opacity: 0.8;
 }
 
+.LinhaDois{
+  margin-left: 18%
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .Card-Team {margin: 0%; width: 100%; padding: 20%; align-items: center;}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .LinhaDois {margin-left: 0;}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .TitleTeam {text-align: center; font-size: 180%; width: 100%;}
+}
+
 /*
 
   ESTILOS DA PÁGINA DE CONTACTOS
 
 */
 
+.logo {
+  width: 3%;
+  display: inline;
+}
+
 .bgimg-contacts {
   background-position: center;
   background-size: cover;
-  background-image: url("Img/img-waves-down.png");
+  background-image: url("Img/img-waves-down-2.png");
   min-height: 5%;
   height: 42%;
 }
@@ -177,12 +208,21 @@ button.accordion.active:after {
 }
 
 .map iframe{
-  left:20%;
-  top:0;
   height:80%;
-  width:75%;
+  width:100%;
   position:absolute;
 }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .map {padding-bottom:100%;};
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  #contactSide {margin-top: -40%;}
+}
+
 .header-wrapper {
     position: fixed;
     top: 0;
