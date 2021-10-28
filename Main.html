@@ -47,16 +47,16 @@
 <body>
 
   <!-- Navbar (sit on top) -->
-  <div class="w3-top my-nav header-wrapper">
-    <div class="w3-bar w3-black w3-card" id="myNavbar">
-      <a href="Main.html" class="w3-bar-item w3-button w3-wide">ASCENDIUM JC</a>
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="Main.html" class="w3-bar-item w3-button w3-wide" style="float: left;">ASCENDIUM JC <img src='Img/ascendium-icon2.ico' style="display:inline; float:right; width:11%; vertical-align: middle; margin-left:-180px; border:0px;"/>
+      </a>
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small">
         <a href="Team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> EQUIPA</a>
         <a href="Contacts.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTOS</a>
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
         onclick="w3_open()">
         <i class="fa fa-bars"></i>
@@ -65,23 +65,27 @@
   </div>
 
   <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
-    style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Fechar ×</a>
-    <a href="Team.html" onclick="w3_close()" class="w3-bar-item w3-button">EQUIPA</a>
-    <a href="Contacts.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTOS</a>
+  <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display:none; margin-top: 15%;" id="myNavbar2">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-black w3-large">Fechar Aba<i class="fas fa-times-circle" style="float: right;"></i></a>
+    <a href="Team.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fa fa-user"></i> EQUIPA</a>
+    <a href="Contacts.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fa fa-envelope"></i> CONTACTOS</a>
   </nav>
+
+  <!-- Código Fonte de JavaScript -->
+  <script src="script.js" crossorigin="anonymous"></script>
 
   <!-- Header with full-height image -->
   <header class="bgimg-1" id="home">
     <div class="w3-display-middle w3-text-white" style="width: 100%;">
       <br><br><br><br>
-      <span class="Ascendium">ASCENDIUM</span><br>
-      <span class="JuniorConsulting">JUNIOR CONSULTING</span><br>
-      <span class="w3-large">A Junior Iniciativa dos estudantes do Instituto Superior de Engenharia do Porto.</span>
+      <span class="w3-xxxlarge" style="text-align: center; font-weight: 1000; line-height: 0%; text-shadow: 2px 2px 2px lightgray;">Ascendium</span><br><br>
+      <span class="w3-xxxlarge" style="text-align: center; font-weight: 1000; line-height: 0%; text-shadow: 2px 2px 2px lightgray;">Junior</span><br><br>
+      <span class="w3-xxxlarge" style="text-align: center; font-weight: 1000; line-height: 0%; text-shadow: 2px 2px 2px lightgray;">Consulting</span><br><br>
+      <span class="w3-large">A Júnior Iniciativa dos estudantes do Instituto Superior de Engenharia do Porto.</span>
       <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top">Sabe mais +</a></p>
     </div>
-    <div class="w3-display-bottommiddle w3-text-white w3-xlarge" style="padding: 100px;">
+    <div class="w3-display-bottommiddle w3-text-white w3-xlarge" id="SocialMain">
       <a href="https://www.facebook.com/ascendiumjc" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
       <a href="https://www.instagram.com/ascendiumjc/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
       <a href="https://www.linkedin.com/company/ascendiumjc/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
