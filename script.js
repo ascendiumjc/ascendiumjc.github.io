@@ -9,7 +9,7 @@ function onClick(element) {
 
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
+var mySidebar = document.getElementById("myNavbar2");
 
 function w3_open() {
   if (mySidebar.style.display === 'block') {
@@ -23,4 +23,3 @@ function w3_open() {
 function w3_close() {
   mySidebar.style.display = "none";
 }
-
