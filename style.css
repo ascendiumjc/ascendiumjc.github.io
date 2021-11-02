@@ -239,3 +239,7 @@ button.accordion.active:after {
   padding-bottom: 24px !important;
 }
 
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  #linksContacto {margin-top: -10%;}
+}
