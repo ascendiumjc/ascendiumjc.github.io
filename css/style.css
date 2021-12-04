@@ -20,7 +20,7 @@ html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("Img/img-waves-down-2.png");
+  background-image: url("../Img/img-waves-down-2.png");
   min-height: 100%;
 }
 
