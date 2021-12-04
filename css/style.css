@@ -27,7 +27,7 @@ html {
 .bgimg-2 {
   background-position: center;
   background-size: cover;
-  background-image: url("Img/img-waves-up-down.png");
+  background-image: url("../Img/img-waves-up-down.png");
   min-height: 100%;
 }
 
@@ -116,13 +116,13 @@ button.accordion.active:after {
 .bgimg-Equipa-Top {
   background-position: center;
   background-size: cover;
-  background-image: url("Img/img-waves-down.png");
+  background-image: url("../Img/img-waves-down.png");
   min-height: 5%;
   height: 50%;
 }
 
 .bgimg-Equipa-Side {
-  background-image: url("Img/img-waves-left-right.png"), url("Img/img-waves-right-left.png");
+  background-image: url("../Img/img-waves-left-right.png"), url("Img/img-waves-right-left.png");
   background-repeat: repeat-y;
   background-size: 10%, 10%;
   background-position: 0%, 100%;
@@ -195,7 +195,7 @@ button.accordion.active:after {
 .bgimg-contacts {
   background-position: center;
   background-size: cover;
-  background-image: url("Img/img-waves-down-2.png");
+  background-image: url("../Img/img-waves-down-2.png");
   min-height: 5%;
   height: 42%;
 }
