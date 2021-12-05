@@ -19,7 +19,7 @@
 
   <!-- Fontes de Letra e Ícones -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   <script src="https://kit.fontawesome.com/71f8b51dda.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -32,96 +32,475 @@
   <!-- Código Fonte de JavaScript -->
   <script src="script.js" crossorigin="anonymous"></script>
 
+  <!--Fontes do instagram slider -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <script type="text/javascript" src="js/instafeed.min.js"></script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
 </head>
 
-<body>
+<!-- <div class="bgimg-Equipa-Side"> -->
 
-  <!-- Navbar (sit on top) -->
-  <div class="w3-top">
-    <div class="w3-bar w3-white w3-card" id="myNavbar1">
-      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium"
-    onclick="w3_open()">
-    <i class="fa fa-bars"></i>
+      onclick="w3_open()">
+      <i class="fa fa-bars"></i>
     </a>
     <a href="index.html" class="w3-bar-item w3-button w3-wide w3-right w3-hide-large w3-hide-medium" style="float: left;">ASCENDIUM JC <img src='Img/ascendium-icon2.ico' style="display:inline; float:right; width:11%; vertical-align: middle; margin-left:-180px; border:0px;"/>
     </a>
 
-  <!-- Vista PC -->
-  <a href="index.html" class="w3-bar-item w3-button w3-wide w3-hide-small" style="float: left;">ASCENDIUM JC <img src='Img/ascendium-icon2.ico' style="display:inline; float:right; width:11%; vertical-align: middle; margin-left:-180px; border:0px;"/>
-  </a>
-      <!-- Right-sided navbar links -->
-      <div class="w3-right w3-hide-small">
-        <a href="Team.html" class="w3-bar-item w3-button w3-hover-text-white w3-hover-green"><i class="fa fa-user w3-text-blue"></i> EQUIPA</a>
-        <a href="Contacts.html" class="w3-bar-item w3-button w3-hover-text-white w3-hover-green"><i class="fa fa-envelope w3-text-yellow"></i> CONTACTOS</a>
-      </div>
+    <!-- Vista PC -->
+    <a href="index.html" class="w3-bar-item w3-button w3-wide w3-hide-small" style="float: left;">ASCENDIUM JC <img src='Img/ascendium-icon2.ico' style="display:inline; float:right; width:11%; vertical-align: middle; margin-left:-180px; border:0px;"/>
+    </a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="Team.html" class="w3-bar-item w3-button w3-hover-text-white w3-hover-green"><i class="fa fa-user w3-text-blue"></i> EQUIPA</a>
+      <a href="Contacts.html" class="w3-bar-item w3-button w3-hover-text-white w3-hover-green"><i class="fa fa-envelope w3-text-yellow"></i> CONTACTOS</a>
     </div>
   </div>
+</div>
 
-  <!-- Sidebar em Dispositivos com Ecrâ Pequeno -->
+<!-- Sidebar em Dispositivos com Ecrâ Pequeno -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-text-dark-gray  w3-animate-left w3-hide-medium w3-hide-large" style="display:none; margin-top: 10%;"
-id="myNavbar2">
-<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-dark-gray w3-text-white w3-large"><i class="fas fa-times-circle" style="float: right;"></i></a>
-<a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green w3-hover-text-white"><i class="fas fa-home w3-text-brown"></i> 
-  <bdi style="margin-left: 5.0%;">PÁGINA INICIAL</bdi></a>
-<a href="Team.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green w3-hover-text-white"><i class="fa fa-user w3-text-blue"></i> 
-  <bdi style="margin-left: 6.0%;">EQUIPA</bdi></a>
+  id="myNavbar2">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-dark-gray w3-text-white w3-large"><i class="fas fa-times-circle" style="float: right;"></i></a>
+  <a href="#shortcutDirecao" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fa-solid fa-brain"></i>
+     <bdi style="margin-left: 5%;">Direção</bdi></a>
+  <a href="#shortcutAssembleia" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green" style="text-align: justify;"><i class="fa-solid fa-gavel"></i> 
+    <bdi style="margin-left: 5%;">Mesa de A.G.</bdi></a>
+  <a href="#shortcutFiscal" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fa-solid fa-magnifying-glass"></i> 
+    <bdi style="margin-left: 5%;">Conselho Fiscal </bdi></a>
+  <a href="#shortcutProjetos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fa-solid fa-diagram-project"></i> 
+    <bdi style="margin-left: 3%;">Dep. de Projetos</bdi></a>
+  <a href="#shortcutMarketing" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fa-solid fa-bullhorn"></i>
+    <bdi style="margin-left: 5%;">Dep. de Marketing</bdi><br><bdi style="margin-left: 16.5%;">e Comunicação </bdi></a>
+  <a href="#shortcutComercial" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fa-solid fa-address-book"></i>
+    <bdi style="margin-left: 5%;">Dep. Comercial</bdi></a>
+  <a href="#shortcutQualidade" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fa-solid fa-circle-check"></i> 
+    <bdi style="margin-left: 5%;">Dep. de Gestão</bdi><br> <bdi style="margin-left: 16.5%;">e Qualidade</bdi></a>
+  <a href="#shortcutDireito" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fa-solid fa-money-check-dollar"></i> 
+    <bdi style="margin-left: 4.0%;">Dep. de Direito</bdi><br> <bdi style="margin-left: 16.5%;">e Finanças </bdi></a>
+  <a href="#shortcutRH" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fa-solid fa-id-card"></i> 
+    <bdi style="margin-left: 4.0%;">Dep. de Recursos</bdi><br><bdi style="margin-left: 16.5%;">Humanos </bdi></a>
+  <hr>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fas fa-home w3-text-brown w3-hover-text-white"></i> 
+    <bdi style="margin-left: 5.0%;">PÁGINA INICIAL</bdi></a>
+  <a href="contacts.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green"><i class="fa fa-envelope w3-text-yellow w3-hover-text-white"></i> 
+    <bdi style="margin-left: 6.0%;">CONTACTOS</bdi></a>
 </nav>
 
-  <!-- Código Fonte de JavaScript -->
-  <script src="script.js" crossorigin="anonymous"></script>
+<!-- Código Fonte de JavaScript -->
+<script src="script.js" crossorigin="anonymous"></script>
 
-  <!-- Header com a Imagem Inteira -->
-  <header class="bgimg-1" id="#home">
-    <div class="w3-display-middle w3-text-white" style="width: 100%; margin-top: -12%">
-      <br><br><br><br>
-      <span class="w3-xxxlarge" style="text-align: center; font-weight: 1000; line-height: 0%; text-shadow: 2px 2px 2px lightgray;">CONTACTOS</span><br><br>
-      <span class="w3-large">Alguma dúvida ou questão? <br> Não hesites em nos contactar!</span>
-      <div class="w3-text-white w3-xlarge" style="padding: 1%;">
-        <a href="https://www.facebook.com/ascendiumjc" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-        <a href="https://www.instagram.com/ascendiumjc/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-        <a href="https://www.linkedin.com/company/ascendiumjc/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-      </div>
-  </header>
-
-  <!-- Google Maps e Contactos -->
-  <div class="w3-row" id="mapaLinks">
-
-    <!-- Google Maps -->
-    <div class="w3-half w3-container">
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1501.4938293775865!2d-8.608382251465578!3d41.178436378513595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd246449b419e1c1%3A0x16a6fd2fcace4efe!2sInstituto%20Superior%20de%20Engenharia%20do%20Porto%20-%20Polit%C3%A9cnico%20do%20Porto!5e0!3m2!1spt-PT!2spt!4v1629991093617!5m2!1spt-PT!2spt"
-          width="20" height="20" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
+<!-- Header with full-height image -->
+<header class="bgimg-1" id="#home">
+  <div class="w3-display-middle w3-text-white" style="width: 100%; padding-bottom: 5%; margin-top: -9.5%">
+    <br><br><br><br>
+    <span class="w3-xxxlarge" style="text-align: center; font-weight: 1000; line-height: 0%; text-shadow: 2px 2px 2px lightgray;">EQUIPA</span><br><br>
+    <span class="w3-large">Conhece a equipa que todos os dias faz a Ascendium crescer.</span>
+    <div class="w3-text-white w3-xlarge" style="padding: 1%;">
+      <a href="https://www.facebook.com/ascendiumjc" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/ascendiumjc/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/company/ascendiumjc/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <br><br>
     </div>
-
-    <!-- Secção de Contactos -->
-        <!-- Descrição dos Contactos -->
-    <div class="w3-half w3-container" id="linksContacto">
-      <!-- Contacto Morada -->
-      <a href="https://goo.gl/maps/iFwafr7TkV5ji5r78" target="_blank" class="email" style="text-decoration: none; font-weight: 600;">
-        <p><i class="fa fa-map-marker fa-fw w3-text-red w3-xlarge w3-margin-right bigbox w3-";></i>Porto, PT</p>
-      </a>
-      <!-- Contacto Telefónico -->
-      <a href="tel:+351 919111222" target="_blank" class="email" style="text-decoration: none; font-weight: 600;">
-        <p><i class="fa fa-phone fa-fw w3-text-green w3-xlarge w3-margin-right"></i>+351 919111222</p>
-      </a>
-      <!-- Contacto Email -->
-      <a href="mailto:ascendium.geral@gmail.com?subject=Contacto-Ascendium" target="_blank" class="email"
-        style="text-decoration: none; font-weight: 600;">
-        <p><i class="fa fa-envelope fa-fw w3-text-yellow w3-xlarge w3-margin-right">
-          </i>ascendium.geral@gmail.pt</p>
-      </a>
-        <!-- Fim da Secção de Contactos -->
-    </div>
-
   </div>
+</header>
 
-</body>
-  
-  <script>
-  // Toggle between showing and hiding the sidebar when clicking the menu icon
+<!-- Equipa -->
+
+<!-- DIREÇÃO-->
+<div>
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutDirecao">
+    <br><br>
+    <h1  class="TitleTeam"><i class="fa-solid fa-brain"></i> Direção</h1>
+  </div>
+  <div class="w3-container w3-center Card-Team-Grid">
+    <!-- Primeira Linha-->
+    <div class="w3-row-padding w3-centered">
+      <!-- Presidente -->
+      <div class="Card-Team w3-third w3-center w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white LinhaUm">
+        <img src="Img/MargaridaMelo.png" alt="Margarida Melo">
+        <h3>Margarida Melo</h3>
+        <p class="Card-Team-Title"><b>Presidente</b></p>
+        <p>Engenharia de Sistemas</p>
+        <a href="https://www.linkedin.com/in/margmelo/" target="_blank"><i
+            class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+    </div>
+    <!-- SEGUNDA LINHA -->
+    <div class=" w3-container w3-center w3-centered">
+      <!-- Vice Presidente Interno -->
+      <div class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white">
+        <img src="Img/CarolinaSantos.png" alt="Carolina Santos">
+        <h3>Carolina Santos</h3>
+        <p class="Card-Team-Title"><b>Vice Presidente Interna</b></p>
+        <p>Biorrecursos</p>
+        <a href="https://www.linkedin.com/in/carolinaasantos/" target="_blank"><i
+            class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+      <!-- Vice Presidente Externo -->
+      <div class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Bruno E. Sousa">
+        <h3>Bruno E. Sousa</h3>
+        <p class="Card-Team-Title"><b>Vice Presidente Externo</b></p>
+        <p>Engenharia e Gestão Industrial</p>
+        <a href="https://www.linkedin.com/in/brunoefsousa/" target="_blank"><i
+            class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+      <!-- Tesoureiro -->
+      <div
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered">
+        <img src="Img/AngeloSoares.png" alt="Ângelo Soares">
+        <h3>Ângelo Soares</h3>
+        <p class="Card-Team-Title"><b>Tesoureiro</b></p>
+        <p>Engenharia e Gestão Industrial</p>
+        <a href="https://www.linkedin.com/in/%C3%A2ngelo-soares/" target="_blank"><i
+            class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MESA DE ASSEMBLEIA GERAL-->
+<div>
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutAssembleia">
+    <br><br>
+    <h1  class="TitleTeam"><i class="fa-solid fa-gavel"></i> Mesa de Assembleia Geral</h1>
+  </div>
+  <div class="w3-container w3-center Card-Team-Grid">
+    <!-- Primeira Linha-->
+    <div class="w3-row-padding w3-centered">
+      <!-- Presidente -->
+      <div class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Bruno G. Sousa">
+        <h3>Bruno G. Sousa</h3>
+        <p class="Card-Team-Title"><b>Presidente</b></p>
+        <p>Energias Sustentáveis</p>
+        <a href="https://www.linkedin.com/in/brunogsousa/" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+      <!-- Vice-Presidente -->
+      <div class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white">
+        <img src="Img/AnaVilar.png" alt="Ana Vilar">
+        <h3>Ana Vilar</h3>
+        <p class="Card-Team-Title"><b>Vice-Presidente</b></p>
+        <p>Engenharia e Gestão Industrial</p>
+        <a href="https://www.linkedin.com/in/anavilar1/" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+      <!-- Secretário -->
+      <div class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white">
+        <img src="Img/ManuelBaptista.png" alt="Manuel Baptista">
+        <h3>Manuel Baptista</h3>
+        <p class="Card-Team-Title"><b>Secretário</b></p>
+        <p>Engenharia Biomédica</p>
+        <a href="https://www.linkedin.com/in/manuel-baptista-74032520a/" target="_blank"><i
+            class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONSELHO FISCAL-->
+<div>
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutFiscal">
+    <br><br>
+    <h1  class="TitleTeam"><i class="fa-solid fa-magnifying-glass"></i> Conselho Fiscal</h1>
+  </div>
+  <div class="w3-container w3-center Card-Team-Grid">
+    <!-- Primeira Linha-->
+    <div class="w3-row-padding w3-centered">
+      <!-- Presidente -->
+      <div class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered LinhaDois">
+        <img src="/Img/PedroRocha.png" alt="Pedro Rocha">
+        <h3>Pedro Rocha</h3>
+        <p class="Card-Team-Title"><b>Presidente</b></p>
+        <p>Engenharia e Gestão Industrial</p>
+        <a href="http://www.linkedin.com/in/p-rocha" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+      <!-- Vice-Presidente -->
+      <div class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered">
+        <img src="Img/SaraTeixeira.png" alt="Sara Teixeira">
+        <h3>Sara Teixeira</h3>
+        <p class="Card-Team-Title"><b>Vice-Presidente</b></p>
+        <p>Engenharia Biomédica</p>
+        <a href="https://www.linkedin.com/in/saracmteixeira/" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- DEPARTAMENTO DE PROJETOS-->
+<div>
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutProjetos">
+    <br><br>
+    <h1  class="TitleTeam"><i class="fa-solid fa-diagram-project"></i> Projetos</h1>
+  </div>
+  <div class="w3-container w3-center Card-Team-Grid">
+    <!-- PRIMEIRA LINHA-->
+    <div class="w3-row-padding w3-center w3-centered">
+      <!-- Primeira Pessoa -->
+      <div
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered">
+        <img src="Img/CarlosVieira.png" alt="Carlos Vieira">
+        <h3>Carlos Vieira</h3>
+        <p class="Card-Team-Title"><b>Diretor e Gestor de Projeto</b></p>
+        <p>Engenharia Eletrotécnica</p>
+        <a href="https://www.linkedin.com/in/carlosvieira99/" target="_blank"><i
+            class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+      <!-- Segunda Pessoa -->
+      <div
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered">
+        <img src="Img/RuiOliveira.png" alt="Rui Oliveira">
+        <h3>Rui Oliveira</h3>
+        <p class="Card-Team-Title"><b>Gestor de Projeto</b></p>
+        <p>Engenharia e Gestão Industrial</p>
+        <a href="https://www.linkedin.com/in/ruisaoliveira/" target="_blank"><i
+            class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+      <!-- Terceira Pessoa -->
+      <div class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Bruno G. Sousa">
+        <h3>Bruno G. Sousa</h3>
+        <p class="Card-Team-Title"><b>Gestor de Projeto</b></p>
+        <p>Energias Sustentáveis</p>
+        <a href="https://www.linkedin.com/in/brunogsousa/" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MARKETING E COMUNICAÇÃO-->
+<div>
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutMarketing">
+    <br><br>
+    <h1  class="TitleTeam"><i class="fa-solid fa-bullhorn"></i> Marketing e Comunicação</h1>
+  </div>
+  <div class="w3-container w3-center Card-Team-Grid">
+    <!-- Primeira Linha-->
+    <div class="w3-row-padding w3-centered">
+      <!-- Presidente -->
+      <div class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white">
+        <img src="Img/LeonorGomes.png" alt="Leonor Gomes">
+        <h3>Leonor Gomes</h3>
+        <p class="Card-Team-Title"><b>Diretora</b></p>
+        <p>Engenharia Mecânica</p>
+        <a href="https://www.linkedin.com/in/leonor-gomes00/" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+      <!-- Vogal -->
+      <div class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white">
+        <img src="Img/PedroRocha.png" alt="Pedro Rocha">
+        <h3>Pedro Rocha</h3>
+        <p class="Card-Team-Title"><b>Colaborador</b></p>
+        <p>Engenharia e Gestão Industrial</p>
+        <a href="http://www.linkedin.com/in/p-rocha" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+      <!-- Vogal -->
+      <div class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Beatriz Cid">
+        <h3>Beatriz Cid</h3>
+        <p class="Card-Team-Title"><b>Colaboradora</b></p>
+        <p>Engenharia Mecânica</p>
+        <a href="https://www.linkedin.com/in/beatrizcid01" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DEPARTAMENTO COMERCIAL-->
+<div>
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutComercial">
+    <br><br>
+    <h1  class="TitleTeam"><i class="fa-solid fa-address-book"></i> Comercial</h1>
+  </div>
+  <div class="w3-container w3-center Card-Team-Grid">
+    <!-- PRIMEIRA LINHA -->
+    <div class="w3-row-padding w3-center w3-centered">
+      <!-- PRIMEIRA PESSOA -->
+      <div
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered LinhaDois">
+        <img src="Img/EduardaPais.png" alt="Eduarda Pais">
+        <h3>Eduarda Pais</h3>
+        <p class="Card-Team-Title"><b>Colaboradora</b></p>
+        <p>Engenharia Mecânica</p>
+        <a href="https://www.linkedin.com/in/eduardafpais/" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+      <!-- SEGUNDA PESSOA -->
+      <div
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered">
+        <img src="Img/MariaCarlão.png" alt="Maria Carlão">
+        <h3>Maria Carlão</h3>
+        <p class="Card-Team-Title"><b>Colaboradora</b></p>
+        <p>Engenharia de Sistemas</p>
+        <a href="https://www.linkedin.com/in/maria-carlao/" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+    </div>
+    <!-- SEGUNDA LINHA -->
+    <div class="w3-row-padding w3-center w3-centered">
+      <!-- PRIMEIRA PESSOA -->
+      <div
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered LinhaDois">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Francisco Pereira">
+        <h3>Francisco Pereira</h3>
+        <p class="Card-Team-Title"><b>Colaborador</b></p>
+        <p>Engenharia Informática</p>
+        <a href="https://www.linkedin.com/in/francisco-pereira-2a5b61214/" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+      <!-- SEGUNDA PESSOA -->
+      <div
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Rita Sobral">
+        <h3>Rita Sobral</h3>
+        <p class="Card-Team-Title"><b>Colaboradora</b></p>
+        <p>Engenharia Informática</p>
+        <a href="https://www.linkedin.com/in/rita-ariana-sobral/" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GESTÃO DE QUALIDADE-->
+<div>
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutQualidade">
+    <br><br>
+    <h1  class="TitleTeam"><i class="fa-solid fa-circle-check"></i> Gestão e Qualidade</h1>
+  </div>
+  <div class="w3-container w3-center Card-Team-Grid">
+    <!-- PRIMEIRA LINHA -->
+    <div class="w3-row-padding w3-center w3-centered">
+      <!-- PRIMEIRA PESSOA -->
+      <div
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered">
+        <img src="Img/JoanaMonteiro.png" alt="Joana Monteiro">
+        <h3>Joana Monteiro</h3>
+        <p class="Card-Team-Title"><b>Diretora</b></p>
+        <p>Engenharia e Gestão Instustrial</p>
+        <a href="https://www.linkedin.com/in/joanatorresmonteiro/" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+      <!-- SEGUNDA PESSOA -->
+      <div
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered">
+        <img src="Img/MarianaFernandes.png" alt="Mariana Fernandes">
+        <h3>Mariana Fernandes</h3>
+        <p class="Card-Team-Title"><b>Colaboradora</b></p>
+        <p>Engenharia de Sistemas</p>
+        <a href="https://www.linkedin.com/in/mariana-fernandes-barbedo/" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+      <!-- TERCEIRA PESSOA -->
+      <div
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Cátia Silva">
+        <h3>Cátia Silva</h3>
+        <p class="Card-Team-Title"><b>Colaboradora</b></p>
+        <p>Engenharia Química</p>
+        <a href="https://www.linkedin.com/in/catia0363" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DIREITO E FINANÇAS -->
+<div>
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutDireito">
+    <br><br>
+    <h1 class="TitleTeam"><i class="fa-solid fa-money-check-dollar"></i> Direito e Finanças</h1>
+  </div>
+  <div class="w3-container w3-center Card-Team-Grid">
+    <!-- PRIMEIRA LINHA -->
+    <div class="w3-row-padding w3-center w3-centered">
+      <!-- SEGUNDA PESSOA -->
+      <div
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered LinhaDois">
+        <img src="Img/ManuelBaptista.png" alt="Manuel Baptista">
+        <h3>Manuel Baptista</h3>
+        <p class="Card-Team-Title"><b>Colaborador</b></p>
+        <p>Engenharia Biomédica</p>
+        <a href="https://www.linkedin.com/in/manuel-baptista-74032520a/" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+      <!-- PRIMEIRA PESSOA -->
+      <div
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered">
+        <img src="Img/SaraTeixeira.png" alt="Sara Teixeira">
+        <h3>Sara Teixeira</h3>
+        <p class="Card-Team-Title"><b>Colaboradora</b></p>
+        <p>Engenharia Biomédica</p>
+        <a href="https://www.linkedin.com/in/saracmteixeira/" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RECURSOS HUMANOS -->
+<div>
+  <div class="w3-container w3-center w3-text-green Card-Team-Grid-Title" id="shortcutRH">
+    <br><br>
+    <h1 class="TitleTeam"><i class="fa-solid fa-id-card"></i> Recursos Humanos</h1>
+  </div>
+  <div class="w3-container w3-center Card-Team-Grid">
+    <!-- PRIMEIRA LINHA -->
+    <div class="w3-row-padding w3-center w3-centered">
+      <!-- PRIMEIRA PESSOA -->
+      <div
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered LinhaDois">
+        <img src="Img/FilipaSousa.png" alt="Filipa Sousa">
+        <h3>Filipa Sousa</h3>
+        <p class="Card-Team-Title"><b>Diretora</b></p>
+        <p>Engenharia Biomédica</p>
+        <a href="https://www.linkedin.com/in/filipasousa14/" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+      <!-- SEGUNDA PESSOA -->
+      <div
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered">
+        <img src="Img/AnaVilar.png" alt="Ana Vilar">
+        <h3>Ana Vilar</h3>
+        <p class="Card-Team-Title"><b>Sub-Diretora</b></p>
+        <p>Engenharia e Gestão Industrial</p>
+        <a href="https://www.linkedin.com/in/anavilar1/" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+    </div>
+     <!-- Segunda LINHA -->
+     <div class="w3-row-padding w3-center w3-centered">
+      <!-- PRIMEIRA PESSOA -->
+      <div
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Ana Viana">
+        <h3>Ana Viana</h3>
+        <p class="Card-Team-Title"><b>Colaboradora</b></p>
+        <p>Engenharia Mecânica</p>
+        <a href="https://www.linkedin.com/in/ana-viana-a654301a5/" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+      <!-- SEGUNDA PESSOA -->
+      <div
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Matilde Arjiz">
+        <h3>Matilde Arjiz</h3>
+        <p class="Card-Team-Title"><b>Colaboradora</b></p>
+        <p>Engenharia Electrotécnica</p>
+        <a href="https://www.linkedin.com/in/matilde-arjiz-3a3480203/" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+      <!-- TERCEIRA PESSOA -->
+      <div
+        class="Card-Team w3-third w3-container w3-margin-bottom w3-white w3-hover-green w3-hover-text-white w3-center w3-centered">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Soraia Pires">
+        <h3>Soraia Pires</h3>
+        <p class="Card-Team-Title"><b>Colaboradora</b></p>
+        <p>Biorrecursos</p>
+        <a href="https://www.linkedin.com/in/soraia-pires-" target="_blank"><i class="Card-Team-Anchor fab fa-linkedin w3-xxlarge w3-text-blue"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("myNavbar2");
 
 function w3_open() {
