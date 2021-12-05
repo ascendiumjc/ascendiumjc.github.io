@@ -65,6 +65,22 @@ html {
   .bgimg-2 {min-height: 100%; padding-top: 4%;}
 }
 
+.bgimg-3 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../Img/img-waves-up2.png");
+  min-height: 35%;
+  margin-bottom: 0%;
+}
+
+#footnoteDiv{
+  margin-top: 6%;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  #footnoteDiv {margin-top: 12%;}
+}
 
 .w3-bar .w3-button {
   padding: 16px;
