@@ -243,6 +243,12 @@ button.accordion.active:after {
   opacity: 0.8;
 }
 
+.TitleTeam{
+  border-radius: 20px;
+  background-color: #008037; 
+  color: white;
+}
+
 .LinhaUm{
   margin-left: 34.3%
 }
