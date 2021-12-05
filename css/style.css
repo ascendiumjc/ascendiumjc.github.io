@@ -22,17 +22,79 @@ html {
   background-size: cover;
   background-image: url("../Img/img-waves-down-2.png");
   min-height: 100%;
+  margin-top: -23%;
+  animation-name: bmgimg-1-animate;
+  animation-duration: 2s;
 }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .bgimg-1 {animation-name: bmgimg-1-animate-mobile; margin-top: -10%;}
+}
+
+@keyframes bmgimg-1-animate {
+  from {margin-top:-35%;}
+  to {margin-top: -23%;}
+}
+
+@keyframes bmgimg-1-animate-mobile {
+  from {margin-top:-100%;}
+  to {margin-top: -10%;}
+}
+
+#titleIndex{
+  width: 100%; 
+  margin-top: -10%;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  #titleIndex {margin-top: -4%;}
+}
+
 
 .bgimg-2 {
   background-position: center;
   background-size: cover;
-  background-image: url("../Img/img-waves-up-down.png");
-  min-height: 100%;
+  background-image: url("../Img/img-waves-up-down2.png");
+  min-height: 70%;
 }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .bgimg-2 {min-height: 100%; padding-top: 4%;}
+}
+
 
 .w3-bar .w3-button {
   padding: 16px;
+}
+
+.buttonFootnote {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  margin-left: 10%;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .buttonFootnote {margin-left: 0%;}
+}
+
+.buttonFootnote:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
 }
 
 .Ascendium {
@@ -51,7 +113,8 @@ html {
 }
 
 #SocialMain {
-  padding-bottom: 10%;
+  padding-bottom: 25%;
+  margin-top: -300%;
 }
 
 /* On smaller screens, decrease text size */
