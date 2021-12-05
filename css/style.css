@@ -217,6 +217,10 @@ button.accordion.active:after {
   position:absolute;
 }
 
+#mapaLinks{
+  margin-left: 18%;
+}
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   .map {padding-bottom:100%;};
@@ -224,7 +228,12 @@ button.accordion.active:after {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
-  #contactSide {margin-top: -40%;}
+  #contactSide {margin-top: -40%;};
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  #mapaLinks {margin-left: 0%;};
 }
 
 .header-wrapper {
