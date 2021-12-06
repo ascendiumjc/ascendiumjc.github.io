@@ -29,7 +29,7 @@ html {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
-  .bgimg-1 {animation-name: bmgimg-1-animate-mobile; margin-top: -20%;}
+  .bgimg-1 {animation-name: bmgimg-1-animate-mobile; margin-top: -10%;}
 }
 
 @keyframes bmgimg-1-animate {
