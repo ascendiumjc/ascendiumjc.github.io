@@ -266,7 +266,14 @@ button.accordion.active:after {
   border-radius: 20px;
   background-color: #008037; 
   color: white;
+  margin-inline:20%
 }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .TitleTeam {margin-inline:2%}
+}
+
 
 .LinhaUm{
   margin-left: 34.3%
@@ -283,10 +290,6 @@ button.accordion.active:after {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   .LinhaDois {margin-left: 0;}
-}
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 600px) {
-  .TitleTeam {text-align: center; font-size: 180%; width: 100%;}
 }
 
 /*
