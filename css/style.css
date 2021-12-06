@@ -52,6 +52,25 @@ html {
   #titleIndex {margin-top: -4%;}
 }
 
+.titleCatIndex{
+  border-bottom: 5px solid green; 
+  margin-inline: 20%;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .titleCatIndex {margin-inline: 0%;}
+}
+
+#imgTeam{
+  margin-top: 0%;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  #imgTeam {margin-top: 3%;}
+}
+
 
 .bgimg-2 {
   background-position: center;
