@@ -24,12 +24,12 @@ html {
   min-height: 100%;
   margin-top: -23%;
   animation-name: bmgimg-1-animate;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
-  .bgimg-1 {animation-name: bmgimg-1-animate-mobile; margin-top: -10%;}
+  .bgimg-1 {animation-name: bmgimg-1-animate-mobile; margin-top: -20%;}
 }
 
 @keyframes bmgimg-1-animate {
@@ -62,7 +62,7 @@ html {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
-  .bgimg-2 {min-height: 100%; padding-top: 4%;}
+  .bgimg-2 {min-height: 80%; padding-top: 12%;}
 }
 
 .bgimg-3 {
