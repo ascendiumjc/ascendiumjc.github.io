@@ -157,6 +157,24 @@ html {
   #SocialMain {padding-bottom: 35%;}
 }
 
+.titleConquistas {
+  font-size: x-large !important;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .titleConquistas {font-size: large !important; font-weight:bold;}
+}
+
+.titleConquistas2 {
+  font-size: xx-large !important;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .titleConquistas2 {font-size: x-large !important;}
+}
+
 .Equipa {
   text-align: center;
   font-size: 55px;
