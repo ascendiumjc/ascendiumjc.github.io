@@ -253,6 +253,20 @@ button.accordion.active:after {
   border-radius: 20px;
 }
 
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .Card-Team-Grid {margin: 0%}
+}
+
+.LinhaUm{
+  margin-left: 34.3%
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .LinhaUm {margin: 0%}
+}
+
 .Card-Team {
   padding: 0px !important;
   border-radius: 20px;
@@ -260,6 +274,11 @@ button.accordion.active:after {
   margin: 1.5%;
   width:30%;
 }   
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .Card-Team {margin-inline: 15% !important; width: 75% !important;}
+}
 
 .Card-Team img {
   width:100%;
@@ -292,22 +311,17 @@ button.accordion.active:after {
   .TitleTeam {margin-inline:2%}
 }
 
-
-.LinhaUm{
-  margin-left: 34.3%
-}
-
 .LinhaDois{
   margin-left: 18%
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
-  .Card-Team {margin: 0%; width: 100%; padding: 20%; align-items: center;}
+  .Card-Team {margin: 0%; width: 100%; align-items: center;}
 }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
-  .LinhaDois {margin-left: 0;}
+  .LinhaDois {margin-left: 0%;}
 }
 
 /*
