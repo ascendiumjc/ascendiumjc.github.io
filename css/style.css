@@ -258,15 +258,6 @@ button.accordion.active:after {
   .Card-Team-Grid {margin: 0%}
 }
 
-.LinhaUm{
-  margin-left: 34.3%
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 600px) {
-  .LinhaUm {margin: 0%}
-}
-
 .Card-Team {
   padding: 0px !important;
   border-radius: 20px;
@@ -309,6 +300,15 @@ button.accordion.active:after {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   .TitleTeam {margin-inline:2%}
+}
+
+.LinhaUm{
+  margin-left: 34.3%;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .LinhaUm {margin: 0%}
 }
 
 .LinhaDois{
