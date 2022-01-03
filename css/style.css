@@ -1,4 +1,5 @@
 /* Ficheiro de Código CSS */
+
 body,
 h1,
 h2,
@@ -6,231 +7,295 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 body,
 html {
-  height: 100%;
-  line-height: 1.8;
-  scroll-behavior: smooth;
+    height: 100%;
+    line-height: 1.8;
+    scroll-behavior: smooth;
 }
+
 
 /* Full height image header */
+
 .bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("../Img/img-waves-down-2.png");
-  min-height: 100%;
-  margin-top: -23%;
-  animation-name: bmgimg-1-animate;
-  animation-duration: 1.5s;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Img/img-waves-down-2.png");
+    min-height: 100%;
+    margin-top: -23%;
+    animation-name: bmgimg-1-animate;
+    animation-duration: 1.5s;
 }
 
+
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 600px) {
-  .bgimg-1 {animation-name: bmgimg-1-animate-mobile; margin-top: -10%;}
+    .bgimg-1 {
+        animation-name: bmgimg-1-animate-mobile;
+        margin-top: -10%;
+    }
 }
 
 @keyframes bmgimg-1-animate {
-  from {margin-top:-35%;}
-  to {margin-top: -23%;}
+    from {
+        margin-top: -35%;
+    }
+    to {
+        margin-top: -23%;
+    }
 }
 
 @keyframes bmgimg-1-animate-mobile {
-  from {margin-top:-100%;}
-  to {margin-top: -10%;}
+    from {
+        margin-top: -100%;
+    }
+    to {
+        margin-top: -10%;
+    }
 }
 
-#titleIndex{
-  width: 100%; 
-  margin-top: -10%;
+#titleIndex {
+    width: 100%;
+    margin-top: -10%;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 600px) {
-  #titleIndex {margin-top: -4%;}
-}
-
-.titleCatIndex{
-  border-bottom: 5px solid green; 
-  margin-inline: 20%;
-}
 
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 600px) {
-  .titleCatIndex {margin-inline: 0%;}
+    #titleIndex {
+        margin-top: -4%;
+    }
 }
 
-#imgTeam{
-  margin-top: 0%;
+.titleCatIndex {
+    border-bottom: 5px solid green;
+    margin-inline: 20%;
 }
+
 
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 600px) {
-  #imgTeam {margin-top: 3%;}
+    .titleCatIndex {
+        margin-inline: 0%;
+    }
 }
 
+.social-icons {
+    padding: 10px;
+}
+
+#imgTeam {
+    margin-top: 0%;
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 600px) {
+    #imgTeam {
+        margin-top: 3%;
+    }
+}
 
 .bgimg-2 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("../Img/img-waves-up-down2.png");
-  min-height: 70%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Img/img-waves-up-down2.png");
+    min-height: 70%;
 }
 
+
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 600px) {
-  .bgimg-2 {min-height: 80%; padding-top: 12%;}
+    .bgimg-2 {
+        min-height: 80%;
+        padding-top: 12%;
+    }
 }
 
 .bgimg-3 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("../Img/img-waves-up2.png");
-  min-height: 35%;
-  margin-bottom: 0%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Img/img-waves-up2.png");
+    min-height: 35%;
+    margin-bottom: 0%;
 }
 
 .bgimg-3-Team {
-  background-position: center;
-  background-size: cover;
-  background-image: url("../Img/img-waves-up2.png");
-  min-height: 35%;
-  padding-top: 3%;
-  margin-bottom: 0%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Img/img-waves-up2.png");
+    min-height: 35%;
+    padding-top: 3%;
+    margin-bottom: 0%;
 }
 
-#footnoteDiv{
-  margin-top: 6%;
+#footnoteDiv {
+    margin-top: 6%;
 }
+
 
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 600px) {
-  #footnoteDiv {margin-top: 12%;}
+    #footnoteDiv {
+        margin-top: 12%;
+    }
 }
 
 .w3-bar .w3-button {
-  padding: 16px;
+    padding: 16px;
 }
 
 .buttonFootnote {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #4CAF50;
-  margin-left: 10%;
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    margin-left: 10%;
 }
 
+
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 600px) {
-  .buttonFootnote {margin-left: 0%;}
+    .buttonFootnote {
+        margin-left: 0%;
+    }
 }
 
 .buttonFootnote:hover {
-  background-color: #4CAF50;
-  color: white;
+    background-color: #4CAF50;
+    color: white;
 }
 
 .button1:hover {
-  background-color: #4CAF50;
-  color: white;
+    background-color: #4CAF50;
+    color: white;
 }
 
 .button1:hover {
-  background-color: #4CAF50;
-  color: white;
+    background-color: #4CAF50;
+    color: white;
 }
 
 .Ascendium {
-  text-align: center;
-  font-size: 650%;
-  font-weight: 1000;
-  line-height: 0%;
-  text-shadow: 2px 2px 2px lightgray;
+    text-align: center;
+    font-size: 650%;
+    font-weight: 1000;
+    line-height: 0%;
+    text-shadow: 2px 2px 2px lightgray;
 }
 
 .JuniorConsulting {
-  text-align: center;
-  font-size: 55px;
-  font-weight: 800;
-  text-shadow: 2px 2px 2px lightgray;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px lightgray;
 }
 
 #SocialMain {
-  padding-bottom: 25%;
-  margin-top: -300%;
+    padding-bottom: 25%;
+    margin-top: -300%;
 }
 
+
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 600px) {
-  #SocialMain {padding-bottom: 35%;}
+    #SocialMain {
+        padding-bottom: 35%;
+    }
 }
 
 .titleConquistas {
-  font-size: x-large !important;
+    font-size: x-large !important;
 }
 
+
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 600px) {
-  .titleConquistas {font-size: large !important; font-weight:bold;}
+    .titleConquistas {
+        font-size: large !important;
+        font-weight: bold;
+    }
 }
 
 .titleConquistas2 {
-  font-size: xx-large !important;
+    font-size: xx-large !important;
 }
 
+
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 600px) {
-  .titleConquistas2 {font-size: x-large !important;}
+    .titleConquistas2 {
+        font-size: x-large !important;
+    }
 }
 
 .Equipa {
-  text-align: center;
-  font-size: 55px;
-  font-weight: 1000;
-  line-height: 0%;
-  text-shadow: 2px 2px 2px lightgray;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 1000;
+    line-height: 0%;
+    text-shadow: 2px 2px 2px lightgray;
 }
+
+
 /* Style the buttons that are used to open and close the accordion panel */
+
 .accordion {
-  color: black;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
 }
 
 button.accordion::after {
-  font-size: 20px;
-  content: "\002B";
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+    font-size: 20px;
+    content: "\002B";
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
 }
 
 button.accordion.active:after {
-  content: "\2212";
+    content: "\2212";
 }
+
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 .active,
 .accordion:hover {
-  background-color: white;
+    background-color: white;
 }
 
+
 /* Style the accordion panel. Note: hidden by default */
+
 .panel {
-  text-align: justify;
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+    text-align: justify;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
+
 
 /*
 
@@ -239,107 +304,137 @@ button.accordion.active:after {
 */
 
 .bgimg-Equipa-Top {
-  background-position: center;
-  background-size: cover;
-  background-image: url("../Img/img-waves-down.png");
-  min-height: 5%;
-  height: 50%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Img/img-waves-down.png");
+    min-height: 5%;
+    height: 50%;
 }
 
 .bgimg-Equipa-Side {
-  background-image: url("../Img/img-waves-left-right.png"), url("../Img/img-waves-right-left.png");
-  background-repeat: repeat-y;
-  background-size: 10%, 10%;
-  background-position: 0%, 100%;
+    background-image: url("../Img/img-waves-left-right.png"), url("../Img/img-waves-right-left.png");
+    background-repeat: repeat-y;
+    background-size: 10%, 10%;
+    background-position: 0%, 100%;
 }
 
-.Card-Team-Grid-Title{
-  margin-inline: 20%;
+.Card-Team-Grid-Title {
+    margin-inline: 20%;
 }
 
-.Card-Team-Grid{
-  margin:2% 20%; 
-  border-radius: 20px;
+.Card-Team-Grid {
+    margin: 2% 20%;
+    border-radius: 20px;
 }
+
 
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 600px) {
-  .Card-Team-Grid {margin: 0%}
+    .Card-Team-Grid {
+        margin: 0%
+    }
 }
 
 .Card-Team {
-  padding: 0px !important;
-  border-radius: 20px;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 1.5%;
-  width:30%;
-}   
+    padding: 0px !important;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1.5%;
+    width: 30%;
+}
+
 
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 600px) {
-  .Card-Team {margin-inline: 15% !important; width: 75% !important;}
+    .Card-Team {
+        margin-inline: 15% !important;
+        width: 75% !important;
+    }
 }
 
 .Card-Team img {
-  width:100%;
-  border-radius: 20px 20px 0px 0px;
-}    
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
 
 .Card-Team-Title {
-  font-size: 15px;
-  margin: -15px;
-  padding: 0px;
+    font-size: 15px;
+    margin: -15px;
+    padding: 0px;
 }
 
 .Card-Team-Anchor {
-  font-size: 22px;
-  padding: 2.5%;
+    font-size: 22px;
+    padding: 2.5%;
 }
+
 .CardAnchor:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
-.TitleTeam{
-  border-radius: 20px;
-  background-color: #008037; 
-  color: white;
-  margin-inline:20%
+.TitleTeam {
+    border-radius: 20px;
+    background-color: #008037;
+    color: white;
+    margin-inline: 20%
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 600px) {
-  .TitleTeam {margin-inline:2%}
-}
-
-.LinhaUm{
-  margin-left: 34.3%;
-}
 
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 600px) {
-  .LinhaUm {margin: 0%}
+    .TitleTeam {
+        margin-inline: 2%
+    }
 }
 
-.LinhaDois{
-  margin-left: 18%
+.LinhaUm {
+    margin-left: 34.3%;
 }
 
-.LinhaQuatro{
-  margin-left: -15%
-}
-
-.LinhaQuatro2{
-  margin-right: -15%
-}
 
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 600px) {
-  .Card-Team {margin: 0%; width: 100%; align-items: center;}
+    .LinhaUm {
+        margin: 0%
+    }
 }
+
+.LinhaDois {
+    margin-left: 18%
+}
+
+.LinhaQuatro {
+    margin-left: -15%
+}
+
+.LinhaQuatro2 {
+    margin-right: -15%
+}
+
+
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 600px) {
-  .LinhaDois {margin-left: 0%;}
+    .Card-Team {
+        margin: 0%;
+        width: 100%;
+        align-items: center;
+    }
 }
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 600px) {
+    .LinhaDois {
+        margin-left: 0%;
+    }
+}
+
 
 /*
 
@@ -348,48 +443,63 @@ button.accordion.active:after {
 */
 
 .logo {
-  width: 3%;
-  display: inline;
+    width: 3%;
+    display: inline;
 }
 
 .bgimg-contacts {
-  background-position: center;
-  background-size: cover;
-  background-image: url("../Img/img-waves-down-2.png");
-  min-height: 5%;
-  height: 42%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Img/img-waves-down-2.png");
+    min-height: 5%;
+    height: 42%;
 }
 
-.map{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
+.map {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
 }
 
-.map iframe{
-  height:80%;
-  width:100%;
-  position:absolute;
+.map iframe {
+    height: 80%;
+    width: 100%;
+    position: absolute;
 }
 
-#mapaLinks{
-  margin-left: 18%;
+#mapaLinks {
+    margin-left: 18%;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 600px) {
-  .map {padding-bottom:100%;};
-}
 
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 600px) {
-  #contactSide {margin-top: -40%;};
+    .map {
+        padding-bottom: 100%;
+    }
+    ;
 }
 
+
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 600px) {
-  #mapaLinks {margin-left: 0%;};
+    #contactSide {
+        margin-top: -40%;
+    }
+    ;
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 600px) {
+    #mapaLinks {
+        margin-left: 0%;
+    }
+    ;
 }
 
 .header-wrapper {
@@ -400,15 +510,21 @@ button.accordion.active:after {
     height: 50px;
     z-index: 1000;
 }
-.ascendium-green{
-  background-color: #008037 !important;
-} 
-.padding24 {
-  padding-top: 24px !important;
-  padding-bottom: 24px !important;
+
+.ascendium-green {
+    background-color: #008037 !important;
 }
 
+.padding24 {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+}
+
+
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 600px) {
-  #linksContacto {margin-top: -10%;}
+    #linksContacto {
+        margin-top: -10%;
+    }
 }
