@@ -22,7 +22,7 @@ html {
   background-size: cover;
   background-image: url("../Img/img-waves-down-2.png");
   min-height: 100%;
-  margin-top: -23%;
+  margin-top: -20%;
   animation-name: bmgimg-1-animate;
   animation-duration: 1.5s;
 }
@@ -44,7 +44,7 @@ html {
 
 #titleIndex{
   width: 100%; 
-  margin-top: -10%;
+  margin-top: -8%;
 }
 
 /* On smaller screens, decrease text size */
